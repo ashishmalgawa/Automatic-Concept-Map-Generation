@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="0" title="hase" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.0</creator>
+      <lastmodified>09/04/2018</lastmodified>
+    </meta>
+    <nodes>
+      <node id="plants" label="plants" />
+      <node id="leaves" label="leaves" />
+      <node id="yellow" label="yellow" />
+      <node id="water" label="water" />
+      <node id="green" label="green" />
+      <node id="sunlight" label="sunlight" />
+      <node id="flowers" label="flowers" />
+      <node id="roots" label="roots" />
+    </nodes>
+    <edges>
+      <edge id="0" source="plants" target="leaves">
+        <attvalues>
+          <attvalue for="0" value="have" />
+        </attvalues>
+      </edge>
+      <edge id="1" source="plants" target="flowers">
+        <attvalues>
+          <attvalue for="0" value="have" />
+        </attvalues>
+      </edge>
+      <edge id="2" source="plants" target="roots">
+        <attvalues>
+          <attvalue for="0" value="contains" />
+        </attvalues>
+      </edge>
+      <edge id="3" source="leaves" target="green">
+        <attvalues>
+          <attvalue for="0" value="are" />
+        </attvalues>
+      </edge>
+      <edge id="4" source="yellow" target="flowers">
+        <attvalues>
+          <attvalue for="0" value="can" />
+        </attvalues>
+      </edge>
+      <edge id="5" source="yellow" target="sunlight">
+        <attvalues>
+          <attvalue for="0" value="is" />
+        </attvalues>
+      </edge>
+      <edge id="6" source="water" target="roots">
+        <attvalues>
+          <attvalue for="0" value="are" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
